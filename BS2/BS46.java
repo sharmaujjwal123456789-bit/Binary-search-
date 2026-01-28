@@ -1,5 +1,5 @@
 // package BS2;
-//  better approach
+//  better approach for lowerbound
 // public class BS46 {
 //     public static int  lb(int []arr,int n,int target){
 //         int low =0;
