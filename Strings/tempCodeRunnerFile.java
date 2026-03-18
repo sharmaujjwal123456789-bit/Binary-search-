@@ -1,10 +1,17 @@
-package Strings;
-import java.util.*;
-
-public class stringbasic {
-    public static void main(String[] args){
-        Scanner sc= new Scanner(System.in);
-        String str = "Ujjwal sharma";
-        System.out.println(str);
-    }
-}
+ String str = "I am an online Educator";
+    String ans = "";
+    StringBuilder sb = new StringBuilder("");
+    for(int i=0;i<str.length();i++){
+        char ch = str.charAt(i);
+        if(ch != ' '){
+            sb.append(ch);
+        }else{
+            sb.reverse();
+            ans += sb ;
+             ans += " ";
+            sb = new StringBuilder("");
+        }
+    }  
+    sb.reverse();
+    ans += sb;
+    System.out.println(ans)
